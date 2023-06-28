@@ -1,8 +1,9 @@
-package singleResponsibility;
+package openClosed;
 
-public class FuncionarioValidacao {
+public class FuncionarioValidacao implements ValidadorFuncionario {
 
-    public boolean validarFuncionario(Funcionario funcionario){
+    @Override
+    public boolean validarFuncionario(Funcionario funcionario) {
         return validarNome(funcionario.getNome()) && validarSalario(funcionario.getSalario());
     }
 
@@ -20,5 +21,7 @@ public class FuncionarioValidacao {
         }
         return true;
     }
+
+
 
 }

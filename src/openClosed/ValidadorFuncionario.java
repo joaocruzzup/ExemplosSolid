@@ -1,5 +1,5 @@
 package openClosed;
 
-public interface ValidadorObjetos<T> {
-    public abstract void validar(T object);
+public interface ValidadorFuncionario {
+    public abstract boolean validarFuncionario(Funcionario funcionario);
 }

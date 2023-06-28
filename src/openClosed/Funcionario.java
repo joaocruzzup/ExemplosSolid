@@ -1,4 +1,4 @@
-package singleResponsibility;
+package openClosed;
 
 public class Funcionario {
     private String nome;
