@@ -1,4 +1,7 @@
-# Pesquisa sobre SOLID
+<h1 align="center">
+📚<br>Pesquisa sobre SOLID
+</h1>
+
 O presente repositório tem o intuito de demonstrar na prática os pilares do SOLID.
 
 ---
@@ -13,17 +16,17 @@ O SOLID se refere a princípios de design de software, que tem como objetivo mel
 
 O significado de cada letra representa um pilar/princípio, assim tem-se:
 
-1. S: Single Responsibility (Responsábilidade Única): Refere-se que uma classe deve ter apenas uma responsabilidade. Assim, cada classe deve ser responsável por fazer apenas uma função.
-2. O: Open/Closed (Aberto/Fechado): Cada classe deve estar aberta para extensão, ou seja, aumentar suas implementações, porém devem estar fechadas para modificações. Assim, de acordo com esse princípio é necessário que uma classe possa estender o comportamento dela porém sem sofrer alterações.
-3. L: Liskov Substitution (Substituição de Liskov): Se uma classe T é um subtipo de uma classe S, então os objetos do tipo S podem ser substituídos por objetos do tipo T. Assim, esse princípio informa que é possível instanciar objetos da classe filha tendo como base a classe pai.
-4. I: Interface Segregation (Segregação de Interfaces): Interfaces devem ser segregadas a ponto de que uma classe não implemente um método que não vá utilizar. Assim, é melhor criar interfaces que façam métodos específicos para as classes que implementá-las utilizem todos os métodos.
-5. D: Dependency Inversion (Inversão de Dependência): Os módulos de alto nível não devem depender dos de baixo nível. Assim, esse princípio promove a redução do acoplamento do código.
+1. **S -> Single Responsibility (Responsábilidade Única)**: Refere-se que uma classe deve ter apenas uma responsabilidade. Assim, cada classe deve ser responsável por fazer apenas uma função.
+2. **O -> Open/Closed (Aberto/Fechado)**: Cada classe deve estar aberta para extensão, ou seja, aumentar suas implementações, porém devem estar fechadas para modificações. Assim, de acordo com esse princípio é necessário que uma classe possa estender o comportamento dela porém sem sofrer alterações.
+3. **L -> Liskov Substitution (Substituição de Liskov)**: Se uma classe T é um subtipo de uma classe S, então os objetos do tipo S podem ser substituídos por objetos do tipo T. Assim, esse princípio informa que é possível instanciar objetos da classe filha tendo como base a classe pai.
+4. **I -> Interface Segregation (Segregação de Interfaces)**: Interfaces devem ser segregadas a ponto de que uma classe não implemente um método que não vá utilizar. Assim, é melhor criar interfaces que façam métodos específicos para as classes que implementá-las utilizem todos os métodos.
+5. **D -> Dependency Inversion (Inversão de Dependência)**: Os módulos de alto nível não devem depender dos de baixo nível. Assim, esse princípio promove a redução do acoplamento do código.
 
 ---
 
 ## 💻 Classes implementadas
 
-### Implementação do SingleResponsability
+### 📗 Implementação do SingleResponsability
 
 Para acessar a pasta da implementação: [clique aqui](https://github.com/joaocruzzup/ExemplosSolid/tree/main/src/singleResponsibility)
 
@@ -35,7 +38,7 @@ A implementação se baseou a criação de duas classes com responsabilidades ú
 2. Classe [FuncionarioValidacao](https://github.com/joaocruzzup/ExemplosSolid/blob/main/src/singleResponsibility/FuncionarioValidacao.java)
 <br>Responsabilidade: Responsável por validar atributos de funcionário e validar o próprio funcionário completo.
 
-### Implementação do Open/Closed
+### 📘 Implementação do Open/Closed
 Para acessar a pasta da implementação: [clique aqui](https://github.com/joaocruzzup/ExemplosSolid/tree/main/src/openClosed)
 
 A implementação se baseou a criação de algumas classes, onde algumas herdavam de classes concretas e também foi criado interface para demonstrar mais a fundo o pilar.
@@ -46,7 +49,7 @@ A implementação se baseou a criação de algumas classes, onde algumas herdava
 3. Interface HorasExtras
 <br> Essa interface friza sobre o aberto/fechado uma vez que as classes implementarão ela, ou seja, estará aumentando a funcionalidade.
 
-### Implementação do liskovSubstitution
+### 📕 Implementação do liskovSubstitution
 Para acessar a pasta da implementação: [clique aqui](https://github.com/joaocruzzup/ExemplosSolid/tree/main/src/liskovSubstitution)
 
 A implementação se baseus na criação de uma classe abstrata com métodos abstratos, onde as classes filhas serão "obrigadas" a implementar esses métodos. Além disso, há uma main para testar esse principio.
@@ -60,12 +63,14 @@ Assim, no método main é possível perceber que ao instanciar as subclasses (ca
 
 Visualização do que foi dito:
 
+```
 **Animal** cachorro = new Cachorro();
 **Animal** gato = new Gato();
 **Animal** vaca = new Vaca();
+```
 
 
-### Implementação do InterfaceSegregation
+### 📙 Implementação do InterfaceSegregation
 Para acessar a pasta da implementação: [clique aqui](https://github.com/joaocruzzup/ExemplosSolid/tree/main/src/interfaceSegregation)
 
 Nesse projeto foram criados várias interfaces com objetivos específicos para garantir que a segregação de interface foi feita com sucesso.
@@ -79,7 +84,7 @@ Nesse projeto foram criados várias interfaces com objetivos específicos para g
 
 OBS.: Vemos que nesse exemplo apesar de ser atingido o InterfaceSegregation, não foi possível atingir o liskovSubstitution já que as contas não conseguem ser instanciadas a partir da superclasse Conta.
 
-### Implementação do DependencyInversion
+### 📒 Implementação do DependencyInversion
 Para acessar a pasta da implementação: [clique aqui](https://github.com/joaocruzzup/ExemplosSolid/tree/main/src/dependencyInversion)
 
 Nesse projeto foi criado uma interface Operacoes a fim de que a classe Banco não precise instanciar diretamente as ContaCorrente e ContaPoupanca, e sim acessar métodos dessa conta por meio da abstração de Operacoes.
