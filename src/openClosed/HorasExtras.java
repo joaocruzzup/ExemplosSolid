@@ -1,2 +1,5 @@
-package openClosed;public interface HorasExtras {
+package openClosed;
+
+public interface HorasExtras {
+    public abstract void aumentoPorHorasExtras(int horasExtras);
 }

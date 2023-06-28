@@ -2,8 +2,12 @@ package openClosed;
 
 public abstract class Funcionario {
     private String nome;
-    private String cargo;
     private double salario;
+
+    public Funcionario(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
 
     public abstract void imprimirFuncao();
 
@@ -13,14 +17,6 @@ public abstract class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
     }
 
     public double getSalario() {
