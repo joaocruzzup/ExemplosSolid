@@ -1,8 +1,8 @@
 package liskovSubstitution;
 
-public class Mamifero extends Animal{
+public class Cachorro extends Animal{
     @Override
     public void emitirSom() {
-
+        System.out.println("Auuuu");
     }
 }
