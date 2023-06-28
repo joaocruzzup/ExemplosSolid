@@ -1,2 +1,5 @@
-package interfaceSegregation;public interface Transferivel {
+package interfaceSegregation;
+
+public interface Transferivel {
+    public abstract void transferir(double valor);
 }
