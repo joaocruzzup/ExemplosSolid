@@ -8,9 +8,6 @@ public class Funcionario {
         this.nome = nome;
         this.salario = salario;
     }
-    public Funcionario(){
-
-    }
 
     public String getNome() {
         return nome;

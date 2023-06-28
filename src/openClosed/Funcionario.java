@@ -10,9 +10,6 @@ public class Funcionario {
         this.cargo = cargo;
         this.salario = salario;
     }
-    public Funcionario(){
-
-    }
 
     public String getNome() {
         return nome;
