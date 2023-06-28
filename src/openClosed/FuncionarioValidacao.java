@@ -2,6 +2,10 @@ package singleResponsibility;
 
 public class FuncionarioValidacao {
 
+    public boolean validarFuncionario(Funcionario funcionario){
+        return validarNome(funcionario.getNome()) && validarSalario(funcionario.getSalario());
+    }
+
     public boolean validarNome(String nome){
         if (nome == null && nome.isEmpty()){
             return false;
